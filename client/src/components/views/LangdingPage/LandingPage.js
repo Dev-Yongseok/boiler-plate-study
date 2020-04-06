@@ -10,8 +10,14 @@ function LandingPage() {
     }, [])
 
     return (
-        <div>
-            LandingPage 랜딩 페이지 입니당.
+        <div style={
+            { display : 'flex' , justifyContent : 'center', alignItems : 'center',
+                width : '100%' , height : '100vh' , flexDirection : "column"
+        }}>
+           
+            <h1>시작 페이지</h1>
+            <button><a href ="/login">LOGIN</a></button>
+           
         </div>
     )
 }
