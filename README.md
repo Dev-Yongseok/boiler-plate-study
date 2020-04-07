@@ -1,14 +1,18 @@
-# 인프런 노드 리액트 시리즈 강의 따라하기
-수강 기간 ( 20200401 ~ 20200407 )
-- 기본강의를 따라하며 배운것 
+# 인프런 노드 리액트 시리즈 강의 따라하기 - 기본강의
+<strong> 수강 기간 ( 20200401 ~ 20200407 ) <strong/>
 
-Front
-React.JS
-Redux
+> 기본강의를 따라하며 배운것 
 
-Back
-Node.JS
-ExpressJS
+  Front 
+  -----
+  - React.JS
+  - Redux
 
-DataBase
-몽고 DB
+  Back
+  -----
+  - Node.JS
+  - ExpressJS
+
+  DataBase
+  --------
+  - MongoDB
