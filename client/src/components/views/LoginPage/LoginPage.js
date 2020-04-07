@@ -51,6 +51,8 @@ function LoginPage(props) {
                 <input type="password" value={Password} onChange={onPasswordHandler}/>
                 <br/>
                 <button type="submit"> Login </button>
+                <br/>
+                <button type="button"><a href="/">Go To Landing Page</a></button>
 
             </form>
         </div>

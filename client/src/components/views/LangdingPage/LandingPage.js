@@ -17,7 +17,8 @@ function LandingPage() {
            
             <h1>시작 페이지</h1>
             <button><a href ="/login">LOGIN</a></button>
-           
+            <br/>
+            <button><a href ="/register">SIGN-UP</a></button>
         </div>
     )
 }
