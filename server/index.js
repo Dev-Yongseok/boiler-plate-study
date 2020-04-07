@@ -21,11 +21,6 @@ mongoose.connect(config.mongoURI,{
 }).then(()=> console.log('MongoDB Connected...'))
 .catch(err => console.log(err))
 
-app.get('/', (req, res) => res.send('노드 리액트 공부하기!'))
-
-app.get('/api/hello', (req, res) =>{
-    res.send("안녕하세요 리액트 노드 연습중입니다.")
-})
 
 app.post('/api/users/register', (req, res) => { 
     
@@ -80,8 +75,10 @@ app.post('/api/users/login', (req, res) => {
     })
 })
 
-app.get('api/users/auth', auth , (req, res) => {
+app.get('/api/users/auth', auth , (req, res) => {
 
+    console.log(auth)
+    console.log("auth진입")
     // 여기 까지 미들웨어를 통과해 왔다는 얘기는 authentication이 true 라는 뜻.
     res.status(200).json({
         _id : req.user._id,
@@ -93,6 +90,7 @@ app.get('api/users/auth', auth , (req, res) => {
         role :req.user.role,
         image : req.user.image
     })
+    console.log("auth탈출")
 })
 
 app.get('/api/users/logout', auth, (req, res) => {
